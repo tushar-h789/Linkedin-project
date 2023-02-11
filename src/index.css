@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.registration{
+  margin-left: 30%;
+  width: 500px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+  display: flex;
+  margin-left: 230px;
+  font-size: 50px;
+  border-radius: 12px;
+  color: #0077B5;
 }
+
+.logo_name_C{
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+.heading{
+  font-family: 'Nunito', sans-serif;
+  font-size: 34.4px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.regpara{
+  margin-left: 110px;
+  margin-bottom: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20.64px;
+  font-weight: 400;
+  color: #9c9eb9;
+}
+
+.reginput{
+  margin-bottom: 20px !important;
+  width: 100%;
+}
+
+.reglink{
+  font-family: 'Nunito', sans-serif;
+  font-size: 13.64px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.reglink a{
+  color: rgb(140, 8, 122);
+  font-weight: 700;
+}
+
+.authLogo{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
