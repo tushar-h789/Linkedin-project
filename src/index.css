@@ -35,8 +35,13 @@
 }
 
 .reginput{
-  margin-bottom: 20px !important;
+  margin-bottom: 12px !important;
+  margin-top: 20px !important;
   width: 100%;
+}
+
+.signup-btn{
+  margin-top: 25px !important;
 }
 
 .reglink{
@@ -59,4 +64,158 @@
   margin-bottom: 25px;
 }
 
+.eyeicon{
+  position: absolute;
+  right: 20px;
+  bottom: 33px;
+}
 
+.profile{
+  width: 90%;
+  height: 350px;
+  background-color: rgb(201, 191, 191);
+}
+
+.proimg{
+  margin-left: 130px;
+  margin-top: -35px;
+}
+
+.coverPhoto{
+  width: 100%;
+  height: 40%;
+  background-color: rgb(99, 13, 13);
+
+}
+
+.proEidt{
+  color: white;
+  font-size: 20px;
+  margin-left: 340px;
+  margin-top: 90px;
+}
+
+.proName{
+  width: 100%;
+  margin-left: 125px;
+}
+
+.proPara{
+  width: 80%;
+  text-align: center;
+  margin-left: 55px;
+}
+
+.rightSite{
+  margin-right: 32px;
+  position: relative;
+}
+
+.newPost{
+  background-color: #E8E8E8;
+  padding: 12px;
+}
+
+.inputPost{
+  /* width: 960px; */
+  width: 100%;
+  /* position: absolute !important; */
+}
+.inputIcons{
+  position: relative;
+  margin-left: 88%;
+  margin-top: -112px;
+  font-size: 22px;
+}
+.icon{
+  margin-left: 30px;
+  margin-top: 70px;
+}
+
+.peoplePost{
+  width: 100%;
+  height: 285px;
+  margin-top: 50px;
+  background-color: #E8E8E8;
+}
+
+.postPeta{
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  margin-left: 22px;
+}
+
+.profile{
+  width: 100%;
+  height: 360px;
+  background-color: rgb(172, 163, 163);
+}
+
+.coverPic{
+  width: 100%;
+  height: 180px;
+  background-color: rgb(99, 13, 13);
+}
+
+.profileName{
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 30px;
+  width: 583px;
+}
+
+.items{
+  width: 38px;
+  height: 12px;
+  /* border: 1px solid red; */
+  background-color: red;
+}
+
+.about{
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  height: 150px;
+  padding: 12px;
+  margin-top: 30px;
+  background-color: #F7F9FB;
+}
+
+.project{
+  height: 355px;
+  background-color: #F7F9FB;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.projectPic{
+  margin-top: 72px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.projectImage{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.experiance{
+  margin-top: 40px;
+  background-color: #F7F9FB;
+  padding: 12px;
+}
+
+.expicon{
+  margin-left: 90px;
+  font-size: 20px;
+}
+
+.education{
+  height: 200px;
+  background-color: #F7F9FB;
+}

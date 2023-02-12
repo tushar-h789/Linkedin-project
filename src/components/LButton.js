@@ -5,7 +5,7 @@ import React from 'react'
 
 const LButton = (props) => {
   return (
-    <props.bname variant="contained" disableRipple>
+    <props.bname onClick={props.click} className={props.className} variant="contained" disableRipple>
         {props.title}
       </props.bname>
   )
