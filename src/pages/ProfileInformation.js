@@ -43,7 +43,6 @@ const ProfileInformation = () => {
           <List sx={{ width: "100%", maxWidth: 560, marginLeft: "12px" }}>
             <ListItem alignItems="flex-start">
               <ListItemAvatar style={{ marginRight: "18px" }}>
-                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" /> */}
                 <Images imgsrc="assets/expimg1.png" />
               </ListItemAvatar>
               <ListItemText

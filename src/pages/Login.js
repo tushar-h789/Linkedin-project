@@ -128,12 +128,13 @@ const Login = () => {
         
         dispatch(activeUser(userCredential.user))
         localStorage.setItem("userInfo", JSON.stringify(userCredential.user))
-        if (userCredential.user.emailVerified) {
-          navigate("/newsfeed");
-        } else {
-          setLoader(false)
-          toast("Please verify your Email and try again !");
-        }
+        navigate("/newsfeed");
+        // if (userCredential.user.emailVerified) {
+        //   navigate("/newsfeed");
+        // } else {
+        //   setLoader(false)
+        //   toast("Please verify your Email and try again !");
+        // }
       })
       .catch((error) => {
         const errorCode = error.code;

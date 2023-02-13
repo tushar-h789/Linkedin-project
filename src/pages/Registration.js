@@ -17,7 +17,7 @@ import {
 } from "firebase/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, push } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 import { RotatingLines } from "react-loader-spinner";
 
@@ -104,13 +104,27 @@ const Registration = () => {
         formData.email,
         formData.password
       ).then((user) => {
-        sendEmailVerification(auth.currentUser).then(() => {
-          setLoader(false);
-          toast("Email sent. Please check your email and verify your email !");
-          setTimeout(() => {
-            navigate("/login");
-          }, 2000);
-        });
+        console.log(user)
+        sendEmailVerification(auth.currentUser)
+        .then(()=>{
+          updateProfile(auth.currentUser, {
+            displayName: formData.fullname
+          }).then(() => {
+            set(ref(db, 'users/' + user.user.uid), {
+              displayName: user.user.displayName,
+              email: user.user.email,
+            }).then(()=>{
+
+              toast("Email sent. Please check your email and verify your email !");
+            setTimeout(() => {
+              navigate("/login");
+            }, 2000);
+            })
+          }).catch((error) => {
+            // An error occurred
+            // ...
+          });
+        })
       });
     }
   };
