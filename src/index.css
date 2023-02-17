@@ -231,8 +231,14 @@
 }
 
 .img-preview{
+  width: 80px !important;
+  height: 80px !important;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.proImg{
   width: 120px;
   height: 120px;
-  overflow: hidden;
   border-radius: 50%;
 }
