@@ -24,7 +24,7 @@ let router = createBrowserRouter(
       {/* <Route path="friends" element={<Friends />}></Route> */}
       <Route path="/newsfeed" element={<Newsfeed/>}></Route>
       <Route path="/profile" element={<RootLayOut/>}>
-      <Route index element={<ProfileInformation />}></Route>
+      <Route path="profileinfo" element={<ProfileInformation />}></Route>
       <Route path="friends" element={<Friends />}></Route>
       <Route path="post" element={<Post />}></Route>
       </Route>

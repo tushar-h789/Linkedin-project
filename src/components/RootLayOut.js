@@ -55,17 +55,6 @@ const RootLayOut = () => {
   const handleOpenCvr = () => setOpenCvr(true);
   const handleCloseCvr = () => setOpenCvr(false);
 
-  let handleProfile = () => {
-    navigate("/profileinfo");
-  };
-
-  let handleFriends = () => {
-    navigate("/friends");
-  };
-
-  let handlePost = () => {
-    navigate("/post");
-  };
 
   const auth = getAuth();
   let dispatch = useDispatch();
@@ -87,6 +76,19 @@ const RootLayOut = () => {
   if (!data.userdata.userInfo.uid) {
     navigate("/login");
   }
+
+  
+  let handleProfile = () => {
+    navigate("profileinfo");
+  };
+
+  let handleFriends = () => {
+    navigate("friends");
+  };
+
+  let handlePost = () => {
+    navigate("post");
+  };
 
   let handleLogout = () => {
     signOut(auth).then(() => {
@@ -257,7 +259,7 @@ const RootLayOut = () => {
           </Tabs>
         </div>
 
-        <Outlet />
+        
         {/* <BiLogOut className="signOut"  /> */}
         {/* <button >Log Out</button> */}
 
@@ -428,6 +430,8 @@ const RootLayOut = () => {
             </Typography>
           </Box>
         </Modal>
+
+        <Outlet />
       </Container>
     </>
   );

@@ -26,6 +26,7 @@ const Friends = () => {
         </Grid>
 
         
+        
       </Grid>
     </Container>
   );
